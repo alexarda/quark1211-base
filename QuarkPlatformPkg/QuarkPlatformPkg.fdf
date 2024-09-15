@@ -85,9 +85,9 @@ SET gQuarkPlatformTokenSpaceGuid.PcdFlashFvDefaultMainSize = 0x00120000
 ########################################################
 # Quark EDKII Payload Image.
 ########################################################
-0x00400400|0x000F0000
-gQuarkPlatformTokenSpaceGuid.PcdFlashFvDefaultPayloadBase|gQuarkPlatformTokenSpaceGuid.PcdFlashFvDefaultPayloadSize
-FV = EDKII_PAYLOAD_IMAGE
+#0x00400400|0x000F0000
+#gQuarkPlatformTokenSpaceGuid.PcdFlashFvDefaultPayloadBase|gQuarkPlatformTokenSpaceGuid.PcdFlashFvDefaultPayloadSize
+#FV = EDKII_PAYLOAD_IMAGE
 
 ########################################################
 # Quark EDKII Stage2 Image (Compressed)
@@ -1051,29 +1051,29 @@ FILE FV_IMAGE = 9E21FD93-9C72-4c15-8C4B-E77F1DB2D792 {
 # module statements.
 #
 ################################################################################
-[FV.EDKII_PAYLOAD_IMAGE]
-BlockSize          = 0x1000
-FvBaseAddress      = 0xFFC00000
-FvAlignment        = 16         #FV alignment and FV attributes setting.
-ERASE_POLARITY     = 1
-MEMORY_MAPPED      = TRUE
-STICKY_WRITE       = TRUE
-LOCK_CAP           = TRUE
-LOCK_STATUS        = TRUE
-WRITE_DISABLED_CAP = TRUE
-WRITE_ENABLED_CAP  = TRUE
-WRITE_STATUS       = TRUE
-WRITE_LOCK_CAP     = TRUE
-WRITE_LOCK_STATUS  = TRUE
-READ_DISABLED_CAP  = TRUE
-READ_ENABLED_CAP   = TRUE
-READ_STATUS        = TRUE
-READ_LOCK_CAP      = TRUE
-READ_LOCK_STATUS   = TRUE
+#[FV.EDKII_PAYLOAD_IMAGE]
+#BlockSize          = 0x1000
+#FvBaseAddress      = 0xFFC00000
+#FvAlignment        = 16         #FV alignment and FV attributes setting.
+#ERASE_POLARITY     = 1
+#MEMORY_MAPPED      = TRUE
+#STICKY_WRITE       = TRUE
+#LOCK_CAP           = TRUE
+#LOCK_STATUS        = TRUE
+#WRITE_DISABLED_CAP = TRUE
+#WRITE_ENABLED_CAP  = TRUE
+#WRITE_STATUS       = TRUE
+#WRITE_LOCK_CAP     = TRUE
+#WRITE_LOCK_STATUS  = TRUE
+#READ_DISABLED_CAP  = TRUE
+#READ_ENABLED_CAP   = TRUE
+#READ_STATUS        = TRUE
+#READ_LOCK_CAP      = TRUE
+#READ_LOCK_STATUS   = TRUE
 
-FILE APPLICATION = PCD(gQuarkPlatformTokenSpaceGuid.PcdPayloadFile) {
-     SECTION PE32 = QuarkPlatformPkg/Binary/Payload/PayloadSample.efi
-     }
+#FILE APPLICATION = PCD(gQuarkPlatformTokenSpaceGuid.PcdPayloadFile) {
+#     SECTION PE32 = QuarkPlatformPkg/Binary/Payload/PayloadSample.efi
+#     }
 
 ################################################################################
 #
