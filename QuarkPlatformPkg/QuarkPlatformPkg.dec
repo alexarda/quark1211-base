@@ -140,7 +140,6 @@
   ## This PCD controls whether to force local display
   #  Virtual platform may not care the local display for fast boot
   gQuarkPlatformTokenSpaceGuid.PcdBdsFindDisplay|FALSE|BOOLEAN|0x00000001
-
   gQuarkPlatformTokenSpaceGuid.PcdShortformBootSupport|TRUE|BOOLEAN|0x00000002
 
 [PcdsFixedAtBuild]
@@ -177,7 +176,7 @@
   gQuarkPlatformTokenSpaceGuid.PcdLegacyProtectedBIOSRange2Pei|0x00000000|UINT32|0x2000004F
 
   # If true, enable fast boot feature. the behaviour is totally difference to normal boot.
-  gQuarkPlatformTokenSpaceGuid.PcdEnableFastBoot|TRUE|BOOLEAN|0x20000050
+  gQuarkPlatformTokenSpaceGuid.PcdEnableFastBoot|FALSE|BOOLEAN|0x20000050
 
   # FFS filename to find the Payload application.
   # The FFS filename is B43BD3E1-64D1-4744-9394-D0E1C4DE8C87.

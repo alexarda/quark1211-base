@@ -75,6 +75,7 @@
   gEfiUgaDrawProtocolGuid |PcdUgaConsumeSupport # PROTOCOL SOMETIMES_CONSUMES
   gEfiBootLogoProtocolGuid                      # PROTOCOL SOMETIMES_CONSUMES  
   gEfiUserManagerProtocolGuid                   # PROTOCOL CONSUMES
+  gEfiUgaIoProtocolGuid
 
 ####IntelFrameworkModulePkg
   gEfiOEMBadgingProtocolGuid                    # PROTOCOL CONSUMES

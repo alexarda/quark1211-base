@@ -119,6 +119,8 @@
   gEfiDiskInfoProtocolGuid                      # PROTOCOL SOMETIMES_CONSUMES
   gEfiDevicePathToTextProtocolGuid              # PROTOCOL SOMETIMES_CONSUMES
   gEdkiiVariableLockProtocolGuid                # PROTOCOL SOMETIMES_CONSUMES
+  gEfiUgaIoProtocolGuid
+  gEfiUgaDrawProtocolGuid
 
 [FeaturePcd]
   gQuarkPlatformTokenSpaceGuid.PcdShortformBootSupport
@@ -130,6 +132,8 @@
   gEfiMdeModulePkgTokenSpaceGuid.PcdProgressCodeOsLoaderStart
   gQuarkPlatformTokenSpaceGuid.PcdBootManagerMenuFile
   gEfiMdeModulePkgTokenSpaceGuid.PcdErrorCodeSetVariable
+  gEfiMdePkgTokenSpaceGuid.PcdUgaConsumeSupport
 
 [Pcd]
   gEfiMdeModulePkgTokenSpaceGuid.PcdConInConnectOnDemand
+  

@@ -69,5 +69,8 @@
 [Protocols]
   gEfiLoadedImageDevicePathProtocolGuid
   gEfiBootLogoProtocolGuid
+  gEfiUgaIoProtocolGuid
+  gEfiUgaDrawProtocolGuid
 
 [FeaturePcd]
+  gEfiMdePkgTokenSpaceGuid.PcdUgaConsumeSupport

@@ -113,6 +113,8 @@
   gEfiBdsArchProtocolGuid                       ## PROTOCOL PRODUCES
   gEfiSimpleTextInputExProtocolGuid             ## PROTOCOL CONSUMES
   gEdkiiVariableLockProtocolGuid                ## SOMETIMES_CONSUMES
+  gEfiUgaDrawProtocolGuid
+  gEfiUgaIoProtocolGuid
 
 [FeaturePcd]
   gEfiMdePkgTokenSpaceGuid.PcdUefiVariableDefaultLangDeprecate
