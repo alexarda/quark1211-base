@@ -302,9 +302,15 @@
   gEfiMdeModulePkgTokenSpaceGuid.PcdDxeIplSwitchToLongMode|FALSE
   gEfiMdeModulePkgTokenSpaceGuid.PcdPciBusHotplugDeviceSupport|FALSE
   gEfiMdeModulePkgTokenSpaceGuid.PcdInstallAcpiSdtProtocol|TRUE
-  gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdPlatformCsmSupport|FALSE
+  gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdPlatformCsmSupport|TRUE
   gEfiCpuTokenSpaceGuid.PcdCpuMaxCpuIDValueLimitFlag|FALSE
   gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdIsaBusSerialUseHalfHandshake|FALSE
+  gEfiMdePkgTokenSpaceGuid.PcdUgaConsumeSupport|TRUE
+  gEfiMdeModulePkgTokenSpaceGuid.PcdConOutUgaSupport|TRUE
+  gEfiMdeModulePkgTokenSpaceGuid.PcdConOutGopSupport|FALSE
+  gEfiMdeModulePkgTokenSpaceGuid.PcdSupportHiiImageProtocol|TRUE
+  
+  
   !ifdef SECURE_LD
     gQuarkPlatformTokenSpaceGuid.PcdEnableSecureLock|TRUE
     gEfiQuarkNcSocIdTokenSpaceGuid.PcdRmuDmaLock|TRUE
