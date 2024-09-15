@@ -305,7 +305,7 @@ DefinitionBlock (
             Name(_ADR,0x00000000)                  // Device (HI WORD)=0, Func (LO WORD)=0
             Method (_INI)
             {
-                Store(LINUX, OSTP)                 // Set the default os is Linux
+                Store(WINDOWS_XP_SP2, OSTP)                 // Set the default os is Linux
                 If (CondRefOf (_OSI, local0))
                 {
                     //
