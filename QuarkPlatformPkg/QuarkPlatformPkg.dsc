@@ -661,6 +661,8 @@
   QuarkPlatformPkg/Pci/Dxe/PciPlatform/PciPlatform.inf
   MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe.inf
   QuarkSocPkg/QuarkSouthCluster/IohInit/Dxe/IohInitDxe.inf
+  MdeModulePkg/Bus/Pci/NvmExpressDxe/NvmExpressDxe.inf
+  MdeModulePkg/Universal/EbcDxe/EbcDxe.inf
   QuarkSocPkg/QuarkSouthCluster/Uart/Dxe/SerialDxe.inf
 
   #

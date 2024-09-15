@@ -734,6 +734,8 @@ INF  QuarkPlatformPkg/Platform/Dxe/MemorySubClass/MemorySubClass.inf
 INF  QuarkPlatformPkg/Pci/Dxe/PciPlatform/PciPlatform.inf
 INF  MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe.inf
 INF  QuarkSocPkg/QuarkSouthCluster/IohInit/Dxe/IohInitDxe.inf 
+INF  MdeModulePkg/Bus/Pci/NvmExpressDxe/NvmExpressDxe.inf
+INF  MdeModulePkg/Universal/EbcDxe/EbcDxe.inf
 INF  QuarkSocPkg/QuarkSouthCluster/Uart/Dxe/SerialDxe.inf    
 #
 # USB
@@ -935,7 +937,9 @@ INF  QuarkPlatformPkg/Platform/Dxe/MemorySubClass/MemorySubClass.inf
 #
 INF  QuarkPlatformPkg/Pci/Dxe/PciPlatform/PciPlatform.inf
 INF  MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe.inf
-INF  QuarkSocPkg/QuarkSouthCluster/IohInit/Dxe/IohInitDxe.inf 
+INF  QuarkSocPkg/QuarkSouthCluster/IohInit/Dxe/IohInitDxe.inf
+INF  MdeModulePkg/Bus/Pci/NvmExpressDxe/NvmExpressDxe.inf
+INF  MdeModulePkg/Universal/EbcDxe/EbcDxe.inf
 INF  QuarkSocPkg/QuarkSouthCluster/Uart/Dxe/SerialDxe.inf    
 #
 # USB
