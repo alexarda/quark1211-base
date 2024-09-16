@@ -368,7 +368,7 @@
   gPcAtChipsetPkgTokenSpaceGuid.Pcd8259LegacyModeEdgeLevel|0x0000
   gPcAtChipsetPkgTokenSpaceGuid.Pcd8259LegacyModeMask|0xFFFF
 
-  gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdLegacyBiosCacheLegacyRegion|FALSE
+  gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdLegacyBiosCacheLegacyRegion|TRUE
 
 !if $(SECURE_BOOT_ENABLE) == TRUE
   ## Pcd for UEFI Secure boot starting of external executables.
@@ -378,9 +378,9 @@
   #  RESERVED (old value no longer used)    0x00000002
   #  DEFER_EXECUTE_ON_SECURITY_VIOLATION    0x00000003
   #  DENY_EXECUTE_ON_SECURITY_VIOLATION     0x00000004
-  gEfiSecurityPkgTokenSpaceGuid.PcdOptionRomImageVerificationPolicy|0x04
-  gEfiSecurityPkgTokenSpaceGuid.PcdRemovableMediaImageVerificationPolicy|0x04
-  gEfiSecurityPkgTokenSpaceGuid.PcdFixedMediaImageVerificationPolicy|0x04
+  gEfiSecurityPkgTokenSpaceGuid.PcdOptionRomImageVerificationPolicy|0x00
+  gEfiSecurityPkgTokenSpaceGuid.PcdRemovableMediaImageVerificationPolicy|0x00
+  gEfiSecurityPkgTokenSpaceGuid.PcdFixedMediaImageVerificationPolicy|0x00
 !endif
   gEfiSecurityPkgTokenSpaceGuid.PcdTpmPhysicalPresence|FALSE
 
