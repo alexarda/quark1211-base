@@ -54,8 +54,8 @@ DEFINE VS2008x86_DLL    = C:\Program Files (x86)\Microsoft Visual Studio 9.0\Com
 DEFINE VS2008x86_BINX64 = DEF(VS2008x86_BIN)\x86_amd64
 DEFINE VS2008x86_BIN64  = DEF(VS2008x86_BIN)\x86_ia64
 
-DEFINE VS2010_BIN      = C:\Program Files\Microsoft Visual Studio 10.0\Vc\bin
-DEFINE VS2010_DLL      = C:\Program Files\Microsoft Visual Studio 10.0\Common7\IDE;DEF(VS2010_BIN)
+DEFINE VS2010_BIN      = C:\Program Files (x86)\Microsoft Visual Studio 10.0\Vc\bin
+DEFINE VS2010_DLL      = C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE;DEF(VS2010_BIN)
 DEFINE VS2010_BINX64   = DEF(VS2010_BIN)\x86_amd64
 DEFINE VS2010_BIN64    = DEF(VS2010_BIN)\x86_ia64
 

@@ -125,14 +125,14 @@
 [FeaturePcd]
   gQuarkPlatformTokenSpaceGuid.PcdShortformBootSupport
   gQuarkPlatformTokenSpaceGuid.PcdBdsFindDisplay
-
+  gEfiMdePkgTokenSpaceGuid.PcdUgaConsumeSupport
 [FixedPcd]
   gEfiMdeModulePkgTokenSpaceGuid.PcdResetOnMemoryTypeInformationChange
   gEfiMdeModulePkgTokenSpaceGuid.PcdProgressCodeOsLoaderLoad
   gEfiMdeModulePkgTokenSpaceGuid.PcdProgressCodeOsLoaderStart
   gQuarkPlatformTokenSpaceGuid.PcdBootManagerMenuFile
   gEfiMdeModulePkgTokenSpaceGuid.PcdErrorCodeSetVariable
-  gEfiMdePkgTokenSpaceGuid.PcdUgaConsumeSupport
+  
 
 [Pcd]
   gEfiMdeModulePkgTokenSpaceGuid.PcdConInConnectOnDemand
