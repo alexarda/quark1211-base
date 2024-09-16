@@ -81,7 +81,7 @@ DefinitionBlock (
   "DSDT",
   1,
   "INTEL ",
-  "QuarkNcSocId",
+  "QuarkSID",
   3)
 {
     //
