@@ -9,8 +9,8 @@
   * Redistributions of source code must retain the above copyright
   notice, this list of conditions and the following disclaimer.
   * Redistributions in binary form must reproduce the above copyright
-  notice, this list of conditions and the following disclaimer in the
-  documentation and/or other materials provided with the
+  notice, this list of conditions and the following disclaimer in
+  the documentation and/or other materials provided with the
   distribution.
   * Neither the name of Intel Corporation nor the names of its
   contributors may be used to endorse or promote products derived
@@ -50,9 +50,6 @@ DefinitionBlock (
     External(\_PR.CPU0, DeviceObj)
     External(CFGD, FieldUnitObj)
 
-    // Define PDC0 in the global scope
-    Name(PDC0, 0x80000000)   // CPU0 _PDC Flags.
-
     Scope(\)
     {
         // Config DWord, modified during POST
@@ -81,17 +78,27 @@ DefinitionBlock (
         // Name(CFGD, 0x80000000)
         // External Defined in GNVS
 
-        // Scope for _PR.CPU0 operations
-        Scope(\_PR.CPU0)
+        Name(PDC0,0x80000000)   // CPU0 _PDC Flags.
+
+        // We load it in AcpiPlatform
+        //Name(SSDT,Package() 
+        //{
+        //    "CPU0IST ", 0x80000000, 0x80000000,
+        //    "CPU1IST ", 0x80000000, 0x80000000,
+        //    "CPU0CST ", 0x80000000, 0x80000000,
+        //    "CPU1CST ", 0x80000000, 0x80000000,
+        //})
+    }
+    Scope(\_PR.CPU0)
+    {
+        Method(_PDC, 1)
         {
-            Method(_PDC, 1)
-            {
-                //
-                // Store result of PDC.
-                //
-                CreateDWordField(Arg0, 8, CAP0)   // Point to 3rd DWORD.
-                Store(CAP0, PDC0)                // Store It in PDC0.
-            }
+          //
+          // Store result of PDC.
+          //
+          CreateDWordField(Arg0,8,CAP0)   // Point to 3rd DWORD.
+          Store(CAP0,PDC0)                // Store It in PDC0.
         }
     }
+
 }
